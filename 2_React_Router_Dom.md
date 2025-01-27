@@ -145,7 +145,7 @@ export default App;
 - **`path="*"`**: A fallback route for non-existing paths (commonly used for 404 pages).
 - **Dynamic Routes**: Use URL parameters to pass data to components.
 
-**Remaining Explanation**
+### Remaining Explanation
 
 To help understand this `App` component better, we can break it down into several logical sections based on functionality and the roles of each part:
 
