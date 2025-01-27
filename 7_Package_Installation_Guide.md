@@ -149,29 +149,23 @@ Here’s a step-by-step guide to setting up a Vite app along with installing som
 
      1. Install Tailwind and its dependencies:
         ```bash
-        npm install -D tailwindcss postcss autoprefixer
-        npx tailwindcss init
+        npm install tailwindcss @tailwindcss/vite
         ```
 
-     2. Configure Tailwind by editing the `tailwind.config.js` file:
+     2. Configure Tailwind by editing the `vite.config.ts` file:
         ```js
-        module.exports = {
-          content: [
-            "./index.html",
-            "./src/**/*.{js,ts,jsx,tsx}",
+        import { defineConfig } from 'vite'
+        import tailwindcss from '@tailwindcss/vite'
+        export default defineConfig({
+          plugins: [
+            tailwindcss(),
           ],
-          theme: {
-            extend: {},
-          },
-          plugins: [],
-        }
+        })
         ```
 
      3. In your `src/index.css` file, add the following lines:
         ```css
-        @tailwind base;
-        @tailwind components;
-        @tailwind utilities;
+        @import "tailwindcss";
         ```
 
      4. Ensure your CSS file is imported in `src/main.js` or `src/index.js`:
