@@ -19,7 +19,7 @@ Here’s a step-by-step guide to setting up a Vite app along with installing som
 
 ---
 
-## Installation Steps
+## Bootstrap Installation Steps
 1. **Navigate to your Vite project** (if not already inside it):
    ```sh
    cd your-vite-project
