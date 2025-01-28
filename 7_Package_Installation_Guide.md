@@ -19,6 +19,47 @@ Here’s a step-by-step guide to setting up a Vite app along with installing som
 
 ---
 
+## Installation Steps
+1. **Navigate to your Vite project** (if not already inside it):
+   ```sh
+   cd your-vite-project
+   ```
+
+2. **Install React Bootstrap and Bootstrap:**
+   ```sh
+   npm install react-bootstrap bootstrap
+   ```
+
+3. **Import Bootstrap CSS in `main.jsx` or `main.tsx`:**
+   ```jsx
+   import 'bootstrap/dist/css/bootstrap.min.css';
+   ```
+
+## Usage Example
+To verify the installation, you can use a simple React Bootstrap component:
+
+```jsx
+import { Button } from 'react-bootstrap';
+
+function App() {
+  return (
+    <div className="container mt-5">
+      <Button variant="primary">Click Me</Button>
+    </div>
+  );
+}
+
+export default App;
+```
+
+## Running the Project
+Start your Vite development server:
+```sh
+npm run dev
+```
+
+---
+
 ### Step 2: Install Key Packages
 
 #### 1. **Axios**
